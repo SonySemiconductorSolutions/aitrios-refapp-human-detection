@@ -1,0 +1,22 @@
+people_count_settings:
+  bbox_to_point_ratio: 0.9
+people_count_in_regions_settings:
+  bbox_to_point_ratio: 0.9
+  regions:
+  - id: "region1"
+    left: 0
+    top: 0
+    right: 150
+    bottom: 320
+  - id: "region2"
+    left: 170
+    top: 0
+    right: 320
+    bottom: 320
+heatmap_settings:
+  bbox_to_point_ratio: 0.9
+  last_valid_frame: 600
+  image_size_w: 320
+  image_size_h: 320
+  grid_num_w: 8
+  grid_num_h: 8

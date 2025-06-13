@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch FE Debugger",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend/app"
+    },
+    {
+      "name": "Launch BE Debugger",
+      "type": "python",
+      "request": "attach",
+      "connect": {
+          "host": "0.0.0.0",
+          "port": 10001
+      },
+      "pathMappings": [
+          {
+              "localRoot": "${workspaceFolder}/backend/app",
+              "remoteRoot": "/app/app"
+          }
+      ],
+      "justMyCode": true
+  }
+  ]
+}
