@@ -1,0 +1,71 @@
+{
+  "name": "Reference Solution dev container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "features": {
+    "github-cli": "latest"
+  },
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.flake8",
+        "ms-python.black-formatter",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    },
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/bin/bash",
+          "icon": "terminal-bash"
+        }
+      },
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.defaultInterpreterPath": "/usr/local/bin/python",
+      "python.languageServer": "Pylance",
+      "editor.formatOnSave": true,
+      "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+      },
+      "black-formatter.args": [
+        "--line-length=88"
+      ],
+      "flake8.args": [
+        "--max-line-length=88",
+        "--select=W,B,F,E711,E712,E901",
+        "--ignore=E203,B005,F401,F811,F821,F403,F405,W503",
+        "--max-complexity=11"
+      ],
+      "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "prettier.workingDirectories": [
+        {
+          "mode": "auto"
+        }
+      ],
+      "eslint.workingDirectories": [
+        {
+          "mode": "auto"
+        }
+      ]
+    }
+  },
+  "forwardPorts": [8000, 3000],
+  "postCreateCommand": ".devcontainer/scripts/postCreate.sh",
+  "postStartCommand": ".devcontainer/scripts/postStart.sh",
+  "portsAttributes": {
+    "8000": { "label": "Backend API"},
+    "3000": { "label": "Frontend" ,
+            "onAutoForward": "openBrowser"
+    }
+  }
+}
