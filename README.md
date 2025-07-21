@@ -101,17 +101,7 @@ The reference solution requires a model and an edge application to be deployed o
 
 ##### AI Model
 
-- In order to obtain the AI model for object detection, check the [**Console V2 Downloads**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/downloads/console-v2). You will obtain an Object Detection model (based on SSD MobileNet) as a zip file that will need to be imported to the AITRIOS Console and then deployed to the device.
-
-  > **NOTE**<br>
-  > The AI model is downloaded from Console V2 Downloads, but can be used with both V1 and V2 Console versions.
-
-- For instructions on how to import an AI model into **Console V2** and deploy it to the device, check [**Console V2 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-v2/console-user-manual).
-
-- For instructions on how to import an AI model into **Console V1** and deploy it to the device, check [**Console V1 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual).
-
-  > **NOTE**<br>
-  > When importing the AI model, make sure to check the "Converted Model" checkbox as this is a converted model file.
+- In order to obtain the model for object detection, follow the description in the [Developer Site](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/) (specific guide coming soon). The AI model is obtained as a packerOut.zip based on SSD MobileNet and needs to be imported to the AITRIOS Console and then deployed to the device.
 
 ##### Edge Application
 
