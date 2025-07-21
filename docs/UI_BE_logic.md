@@ -3,7 +3,7 @@
 This document explains the workflow of using the web application in the form of sequence diagrams. We start by listing and describing the main UI panels. Then we explain the basic workflow in Login Screen, Realtime Screen and History Screen.
 
 ## UI Panels
-The UI consists of the following panels that can be found in their corresponding files of the various [components] folders.
+The UI consists of the following panels that can be found in their corresponding files of the various [components] folders. 
 - [`src/components`](../frontend/app/src/components/)
 - [`src/features/login-screen/components`](../frontend/app/src/features/login-screen/components)
 - [`src/features/human-detection/components`](../frontend/app/src/features/human-detection/components)
@@ -125,7 +125,7 @@ Child components of `ImageVisualizationPanel`:
 Endpoints used by `ImageVisualizationPanel` and its children:
 - [*Router* `/processing`](../backend/app/routers/processing.py)
   - Connection to a `/processing/ws`
-
+ 
 FE-BE interaction for this panel is implemented in:
 - [*ImageStream.tsx*](../frontend/app/src/utils/ImageStream.tsx)
 </details>
@@ -165,8 +165,8 @@ FE-BE interaction for this panel is implemented in:
 [`PlaybackSourcePanel`](../frontend/app/src/features/human-detection/history-mode/components/PlaybackSourcePanel.tsx) allows users to select between image-based or time-based methods for retrieving historical inference data.
 
 Child components of `PlaybackSourcePanel`:
-  - [`DirectorySelectionPanel`](../frontend/app/src/features/human-detection/history-mode/components/DirectorySelectionPanel.tsx)
-  - [`DateTimeRangePanel`](../frontend/app/src/features/human-detection/history-mode/components/DateTimeRangePanel.tsx)
+  - [`DirectorySelectionPanel`](../frontend/app/src/features/human-detection/history-mode/components/DirectorySelectionPanel.tsx) 
+  - [`DateTimeRangePanel`](../frontend/app/src/features/human-detection/history-mode/components/DateTimeRangePanel.tsx) 
 
 **DirectorySelectionPanel**
 
@@ -175,7 +175,7 @@ This panel allows the user to select an image directory based on the selected de
 Endpoints used by `DeviceSelectionPanel` and its children:
 - [*Router* `/insight`](../backend/app/routers/insight.py)
   - `GET /insight/directories/{device_id}`
-
+  
 FE-BE interaction for this panel is implemented in:
 - [*ImagesAndInferencesFromConsole.tsx*](../frontend/app/src/utils/ImagesAndInferencesFromConsole.tsx)
 
@@ -225,19 +225,19 @@ Child components of `ExtraInfoPanel`:
 
 ### User Workflow Overview
 
-1. **Open the Application**
+1. **Open the Application**  
    Launch the app and see the HeaderBar and SelectConsolePanel.
 
-2. **Select Console & Enter Credentials**
+2. **Select Console & Enter Credentials**  
    Choose a Console, enter credentials in OnlineCredentialsPanel, and apply.
 
-3. **Realtime Mode**
+3. **Realtime Mode**  
    - Select device/model in DeviceModelSelectionPanel.
    - Adjust parameters in ConfigurationParameterPanel.
    - Start inference with ButtonPanel.
    - View realtime results in ImageVisualizationPanel and ExtraInfoPanel.
 
-4. **History Mode**
+4. **History Mode**  
    - Select device in DeviceSelectionPanel.
    - Choose data source in PlaybackSourcePanel.
    - Start playback with PlaybackControlPanel.
@@ -456,7 +456,7 @@ sequenceDiagram
     participant F as Frontend
     participant B as Backend
     end
-
+    
     U -) +F: Login
     F -) +B: Automatically fetch configuration file (GET /app-config/)
     B --) -F: Return initial configuration values
@@ -523,8 +523,8 @@ This section describes the flow of information for fetching historical inference
 
 Child components of `PlaybackSourcePanel`:
 - [`DirectorySelectionPanel`](../frontend/app/src/features/human-detection/history-mode/components/DirectorySelectionPanel.tsx)
-  - [`DirectorySelector`](../frontend/app/src/features/human-detection/history-mode/components/DirectorySelector.tsx)
-- [`DateTimeRangePanel`](../frontend/app/src/features/human-detection/history-mode/components/DateTimeRangePanel.tsx)
+  - [`DirectorySelector`](../frontend/app/src/features/human-detection/history-mode/components/DirectorySelector.tsx) 
+- [`DateTimeRangePanel`](../frontend/app/src/features/human-detection/history-mode/components/DateTimeRangePanel.tsx) 
 
 Endpoints used by `DeviceSelectionPanel`, `PlaybackSourcePanel`, `PlaybackControlPanel` and their children:
 - [*Router* `/device`](../backend/app/routers/device.py)

@@ -23,14 +23,14 @@ RUN apt-get update && apt-get install -y curl default-jre-headless maven jq && \
 
 # Generate API clients
 RUN mkdir -p /workspace/backend/lib/aitrios-console-python-client && \
-    OPENAPI_GENERATOR_VERSION=7.12.0 ~/bin/openapitools/openapi-generator-cli generate \
+    ~/bin/openapitools/openapi-generator-cli generate \
     -i /workspace/backend/client_specs/aitrios-console-openapi.json \
     -g python \
     -o /workspace/backend/lib/aitrios-console-python-client \
     --package-name console_api_client
 
 RUN mkdir -p /workspace/backend/lib/aitrios-console-v2-python-client && \
-    OPENAPI_GENERATOR_VERSION=7.12.0 ~/bin/openapitools/openapi-generator-cli generate \
+    ~/bin/openapitools/openapi-generator-cli generate \
     -i /workspace/backend/client_specs/aitrios-console-v2-openapi.json \
     -g python \
     -o /workspace/backend/lib/aitrios-console-v2-python-client \

@@ -25,6 +25,7 @@ This is the frontend service for the Human Detection Application, built with Rea
 │   ├── .env.prod
 │   ├── .gitignore
 │   ├── eslint.config.js
+│   ├── favicon.ico
 │   ├── index.html
 │   ├── package-lock.json
 │   ├── package.json
@@ -49,6 +50,7 @@ The **`app`** directory contains various files related to the frontend applicati
 - **`.env`**, **`.env.prod`**, **`.env.codespace`**: Specify environment variable configurations for different environments.
 - **`.gitignore`**: Defines ignored files for Git.
 - **`eslint.config.js`**: Linting rules for maintaining code quality.
+- **`favicon.ico`**: The site icon.
 - **`index.html`**: The main HTML entry point for the frontend.
 - **`package.json`** & **`package-lock.json`**: Manage dependencies and project metadata.
 - **`tsconfig.json`**,**`tsconfig.app.json`**,**`tsconfig.node.json`**: Specify TypeScript configurations for different project scopes.
