@@ -34,7 +34,7 @@ Counts the total number of detected people within the entire screen area.
 **Configuration:**
 ```yaml
 people_count_settings:
-  bbox_to_point_ratio: 0.9  
+  bbox_to_point_ratio: 0.9
 ```
 > The `bbox_to_point_ratio` parameter calculates head coordinates from bounding boxes for backend solutions (People Count in Regions, Heat Map) and frontend display (Humanoid View). For People Count, it's only used for frontend display since no backend head coordinate calculation is required.
 
@@ -165,7 +165,7 @@ Click **Select Device** and choose a device from the dropdown list of enrolled d
 ![Device dropdown](./media/hm_device_dropdown.png)
 
 ### 7.2. Select Solution Type
-Once your device is selected, choose a solution type from the solution tab. 
+Once your device is selected, choose a solution type from the solution tab.
 
 The available solution types and their algorithms are the same as in Realtime Mode. For detailed explanations, see [Solution Types](#5-solution-types).
 
@@ -196,8 +196,8 @@ Select the desired time range for the data you want to fetch.
 > History mode has the following data fetch limitations based on API specifications:
 > - **Images and Metadata**: Maximum 256 images starting from the oldest in the selected image directory
 > - **Metadata Only**: Maximum 256 inference results, starting from the newest in the selected time range
-> 
-> In Images and Metadata mode, metadata is retrieved based on the time range of the captured images. When metadata-only results exist within this range, some images may fail to obtain their corresponding metadata properly. 
+>
+> In Images and Metadata mode, metadata is retrieved based on the time range of the captured images. When metadata-only results exist within this range, some images may fail to obtain their corresponding metadata properly.
 
 ### 7.4. Start Playback
 To begin playback, click the **Start Playback** button.
