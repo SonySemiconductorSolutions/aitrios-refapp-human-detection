@@ -93,7 +93,7 @@ To get started with the Human Detection Application, follow the steps below.
 To run this reference solution you need to have a CSV26 camera to be enrolled to your project in the AITRIOS Console. In addition, it should have deployed a human detection Edge application and a compatible object detection AI model. These artifacts should first be obtained locally, then imported to the Console and finally be deployed on device.
 
 > _Note_ </br>
-> For basic device and console operation, please refer to the [**Device Setup Guide**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/device-setup-guide/) and [**Console User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual/).
+> For basic device and console operation, please refer to the [**Console V2 Device Setup Guide**](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/device-setup-guide) and [**Console V2 User Manual**](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/console-user-manual), or [**Console V1 Device Setup Guide**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/device-setup-guide/) and [**Console V1 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual/).
 
 #### Create and deploy artifacts
 
@@ -101,12 +101,12 @@ The reference solution requires a model and an edge application to be deployed o
 
 ##### AI Model
 
-- In order to obtain the AI model for object detection, check the [**Console V2 Downloads**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/downloads/console-v2). You will obtain an Object Detection model (based on SSD MobileNet) as a zip file that will need to be imported to the AITRIOS Console and then deployed to the device.
+- In order to obtain the AI model for object detection, check the [**Console V2 Downloads**](https://developer.aitrios.sony-semicon.com/en/downloads/developer-edition/console-v2). You will obtain an Object Detection model (based on SSD MobileNet) as a zip file that will need to be imported to the AITRIOS Console and then deployed to the device.
 
   > **NOTE**<br>
   > The AI model is downloaded from Console V2 Downloads, but can be used with both V1 and V2 Console versions.
 
-- For instructions on how to import an AI model into **Console V2** and deploy it to the device, check [**Console V2 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-v2/console-user-manual).
+- For instructions on how to import an AI model into **Console V2** and deploy it to the device, check [**Console V2 User Manual**](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/console-user-manual).
 
 - For instructions on how to import an AI model into **Console V1** and deploy it to the device, check [**Console V1 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual).
 
@@ -114,14 +114,12 @@ The reference solution requires a model and an edge application to be deployed o
   > When importing the AI model, make sure to check the "Converted Model" checkbox as this is a converted model file.
 
 ##### Edge Application
-
-- In order to get the Edge Application, check the [**Downloads**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/downloads). Please select from V1 or V2 according to the Console you wish to use. You will obtain an Edge Application that will need to be imported to the AITRIOS Console and then deployed to the device.
+- In order to get the Edge Application, check [**Console V2 Downloads**](https://developer.aitrios.sony-semicon.com/en/downloads/developer-edition/console-v2) or [**Console V1 Downloads**](https://developer.aitrios.sony-semicon.com/en/downloads/developer-edition/console-v1).
 
   > **NOTE**<br>
   > Note that for V1 the Edge Application artifact would be a single file of type `.wasm`/`.aot`, while V2 would result in an Edge Application Package.
 
--  For instructions on how to import an Edge Application into **Console**, and how to deploy it to the device check [**Console User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual/).
-
+- For instructions on how to import an Edge Application into Console and deploy it to the device, check [**Console V2 User Manual**](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/console-user-manual) or [**Console V1 User Manual**](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-user-manual/).
 
 #### Configure the Edge Application
 
@@ -162,7 +160,7 @@ You can then apply the following configuration to the Edge Application deployed 
 ```
 
 > **Note**<br/>
-> For general details on the Edge Application interface, check the [Edge Application Interface JSON Specification](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-v2/edge-application-interface-json-specification) page on the AITRIOS developer website. Pay attention to the [`port_settings` subsection](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/console-v2/edge-application-interface-json-specification?progLang=#_portsettingsSpec) <br/>
+> For general details on the Edge Application interface, check the [Edge Application Interface JSON Specification](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/edge-application-interface-json-specification) page on the AITRIOS developer website. Pay attention to the [`port_settings` subsection](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/edge-application-interface-json-specification?progLang=#_portsettingsSpec) <br/>
 > For details on the custom settings for the Edge Application, check its [README.md](https://github.com/SonySemiconductorSolutions/aitrios-sdk-edge-app/tree/main/sample_apps/detection#custom-parameters).
 
 ### Check prerequisites for executing the Reference Solution
@@ -237,7 +235,7 @@ For more detailed usage instructions, see the [backend README](./backend/README.
 
 ## Trademark
 
-- [Read This First](https://developer.aitrios.sony-semicon.com/en/edge-ai-sensing/documents/read-this-first)
+- [Read This First](https://developer.aitrios.sony-semicon.com/en/docs/developer-edition/console-v2/read-this-first)
 
 ## Notice
 

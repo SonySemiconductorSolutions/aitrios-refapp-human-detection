@@ -69,10 +69,12 @@ See the chapter "Issuing a Client Secret for SDK" in ["Portal User Manual"](http
 - Client ID
 - Client Secret
 
-Get the following required information from [this material](https://developer.aitrios.sony-semicon.com/en/file/download/edge-ai-sensing-portal-console-end-point-info/).
-
-- Console endpoint
-- Portal endpoint
+To execute the REST APIs, please obtain the endpoint information as follows:
+1. Log in to Portal.
+2. From Support → Download, download the document Portal_Console_Endpoint_information_00_en.pdf.
+3. Check the following information described in the document:
+  - Console endpoint
+  - Portal endpoint
 
 And fill [console_access_settings.yaml](app/config/console_access_settings.yaml) file.
 
